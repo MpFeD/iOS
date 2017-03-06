@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB40A3F71DC93F5F00BEF13F /* MaVue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB40A3F61DC93F5F00BEF13F /* MaVue.m */; };
+		FBB3943B1DC93A8A008C2FC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB3943A1DC93A8A008C2FC7 /* main.m */; };
+		FBB3943E1DC93A8A008C2FC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB3943D1DC93A8A008C2FC7 /* AppDelegate.m */; };
+		FBB394411DC93A8A008C2FC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB394401DC93A8A008C2FC7 /* ViewController.m */; };
+		FBB394441DC93A8A008C2FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB394421DC93A8A008C2FC7 /* Main.storyboard */; };
+		FBB394461DC93A8A008C2FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB394451DC93A8A008C2FC7 /* Assets.xcassets */; };
+		FBB394491DC93A8A008C2FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB394471DC93A8A008C2FC7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB40A3F61DC93F5F00BEF13F /* MaVue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaVue.m; sourceTree = "<group>"; };
+		FBB394361DC93A8A008C2FC7 /* David_Toty_TP5_1_Imagier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = David_Toty_TP5_1_Imagier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB3943A1DC93A8A008C2FC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBB3943C1DC93A8A008C2FC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBB3943D1DC93A8A008C2FC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBB3943F1DC93A8A008C2FC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBB394401DC93A8A008C2FC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBB394431DC93A8A008C2FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBB394451DC93A8A008C2FC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB394481DC93A8A008C2FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBB3944A1DC93A8A008C2FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB394521DC93ECB008C2FC7 /* MaVue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaVue.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB394331DC93A86008C2FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBB3942D1DC93A86008C2FC7 = {
+			isa = PBXGroup;
+			children = (
+				FBB394381DC93A8A008C2FC7 /* David_Toty_TP5_1_Imagier */,
+				FBB394371DC93A8A008C2FC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBB394371DC93A8A008C2FC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB394361DC93A8A008C2FC7 /* David_Toty_TP5_1_Imagier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBB394381DC93A8A008C2FC7 /* David_Toty_TP5_1_Imagier */ = {
+			isa = PBXGroup;
+			children = (
+				FB40A3F61DC93F5F00BEF13F /* MaVue.m */,
+				FBB394521DC93ECB008C2FC7 /* MaVue.h */,
+				FBB3943C1DC93A8A008C2FC7 /* AppDelegate.h */,
+				FBB3943D1DC93A8A008C2FC7 /* AppDelegate.m */,
+				FBB3943F1DC93A8A008C2FC7 /* ViewController.h */,
+				FBB394401DC93A8A008C2FC7 /* ViewController.m */,
+				FBB394421DC93A8A008C2FC7 /* Main.storyboard */,
+				FBB394451DC93A8A008C2FC7 /* Assets.xcassets */,
+				FBB394471DC93A8A008C2FC7 /* LaunchScreen.storyboard */,
+				FBB3944A1DC93A8A008C2FC7 /* Info.plist */,
+				FBB394391DC93A8A008C2FC7 /* Supporting Files */,
+			);
+			path = David_Toty_TP5_1_Imagier;
+			sourceTree = "<group>";
+		};
+		FBB394391DC93A8A008C2FC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBB3943A1DC93A8A008C2FC7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBB394351DC93A86008C2FC7 /* David_Toty_TP5_1_Imagier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB3944D1DC93A8A008C2FC7 /* Build configuration list for PBXNativeTarget "David_Toty_TP5_1_Imagier" */;
+			buildPhases = (
+				FBB394321DC93A86008C2FC7 /* Sources */,
+				FBB394331DC93A86008C2FC7 /* Frameworks */,
+				FBB394341DC93A86008C2FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = David_Toty_TP5_1_Imagier;
+			productName = David_Toty_TP5_1_Imagier;
+			productReference = FBB394361DC93A8A008C2FC7 /* David_Toty_TP5_1_Imagier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBB3942E1DC93A86008C2FC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Knu;
+				TargetAttributes = {
+					FBB394351DC93A86008C2FC7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6A4G98MM9G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FBB394311DC93A86008C2FC7 /* Build configuration list for PBXProject "David_Toty_TP5_1_Imagier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBB3942D1DC93A86008C2FC7;
+			productRefGroup = FBB394371DC93A8A008C2FC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBB394351DC93A86008C2FC7 /* David_Toty_TP5_1_Imagier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBB394341DC93A86008C2FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB394491DC93A8A008C2FC7 /* LaunchScreen.storyboard in Resources */,
+				FBB394461DC93A8A008C2FC7 /* Assets.xcassets in Resources */,
+				FBB394441DC93A8A008C2FC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBB394321DC93A86008C2FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB40A3F71DC93F5F00BEF13F /* MaVue.m in Sources */,
+				FBB394411DC93A8A008C2FC7 /* ViewController.m in Sources */,
+				FBB3943E1DC93A8A008C2FC7 /* AppDelegate.m in Sources */,
+				FBB3943B1DC93A8A008C2FC7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBB394421DC93A8A008C2FC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB394431DC93A8A008C2FC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBB394471DC93A8A008C2FC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB394481DC93A8A008C2FC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBB3944B1DC93A8A008C2FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBB3944C1DC93A8A008C2FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB3944E1DC93A8A008C2FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = 6A4G98MM9G;
+				INFOPLIST_FILE = David_Toty_TP5_1_Imagier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.David-Toty-TP5-1-Imagier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBB3944F1DC93A8A008C2FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = 6A4G98MM9G;
+				INFOPLIST_FILE = David_Toty_TP5_1_Imagier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.David-Toty-TP5-1-Imagier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBB394311DC93A86008C2FC7 /* Build configuration list for PBXProject "David_Toty_TP5_1_Imagier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB3944B1DC93A8A008C2FC7 /* Debug */,
+				FBB3944C1DC93A8A008C2FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB3944D1DC93A8A008C2FC7 /* Build configuration list for PBXNativeTarget "David_Toty_TP5_1_Imagier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB3944E1DC93A8A008C2FC7 /* Debug */,
+				FBB3944F1DC93A8A008C2FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBB3942E1DC93A86008C2FC7 /* Project object */;
+}
