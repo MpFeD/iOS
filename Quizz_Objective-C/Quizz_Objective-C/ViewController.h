@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainView.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, readwrite, retain) MainView *vue1;
 
 @end
 

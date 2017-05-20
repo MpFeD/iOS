@@ -13,9 +13,11 @@
 @property(nonatomic,readwrite,retain) UILabel* myLabel;
 @property(nonatomic, readwrite,retain) UIButton* buttonD;
 @property(nonatomic, readwrite,retain) UIButton* buttonG;
+@property(nonatomic, readwrite,retain) UIButton* buttonLVL;
 @property (nonatomic, readwrite,retain) UITextField* myTextField;
 @property (nonatomic, readwrite,retain) UILabel* myName;
 @property (nonatomic, readwrite,retain) UIPickerView *myPicker;
+@property (nonatomic, readwrite,retain) UIViewController *myController;
 
 - (void) setPosition:(CGSize) format;
 

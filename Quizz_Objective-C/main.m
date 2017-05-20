@@ -2,7 +2,7 @@
 //  main.m
 //  Quizz_Objective-C
 //
-//  Created by m2sar on 31/01/2017.
+//  Created by Knu on 08/05/17.
 //  Copyright © 2017 UPMC. All rights reserved.
 //
 

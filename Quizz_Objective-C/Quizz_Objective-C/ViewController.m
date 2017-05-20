@@ -15,11 +15,13 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    self.view = [[MainView alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    _vue1 = [[MainView alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    _vue1.myController = self;
+    self.view = _vue1;
 }
 
 
@@ -30,10 +32,19 @@
 }
 
 - (void) viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
-    
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
     MainView *mv = (MainView*)self.view;
     [mv setPosition:size];
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+}
+
+
+-(BOOL)shouldAutorotate{
+    return YES;
 }
 
 

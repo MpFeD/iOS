@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MainView.h"
+#import "CombatView.h"
 #import "Modele.h"
 
+@interface UIDevice (MyPrivateNameThatAppleWouldNeverUseGoesHere)
+- (void) setOrientation:(UIInterfaceOrientation)orientation;
+@end
 
 @implementation MainView: UIView
 
@@ -19,6 +23,15 @@ UIVisualEffectView *myEffect;
 NSArray *data;
 NSString *selectedClass;
 NSTimer *myTimer;
+UIImageView* classImg;
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    //    return NO;
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+}
+
 
 - (id) initWithFrame:(CGRect)frame{
     
@@ -31,6 +44,7 @@ NSTimer *myTimer;
         _myName = [[UILabel alloc]init];
         _buttonD = [UIButton buttonWithType: UIButtonTypeSystem];
         _buttonG = [UIButton buttonWithType: UIButtonTypeSystem];
+        _buttonLVL = [UIButton buttonWithType: UIButtonTypeSystem];
         
         _myLabel.text = @"";
         _myLabel.textAlignment = NSTextAlignmentCenter;
@@ -45,6 +59,10 @@ NSTimer *myTimer;
         [_buttonG addTarget:self action:@selector(buttonGAction:) forControlEvents:UIControlEventTouchDown];
         
         [_buttonD addTarget:self action:@selector(buttonDAction:) forControlEvents:UIControlEventTouchDown];
+        
+        [_buttonLVL addTarget:self action:@selector(bLvlUp:) forControlEvents:UIControlEventTouchDown];
+        
+        [_buttonLVL setTitle:@"LVL UP" forState:UIControlStateNormal];
         
         UIImage *img = [UIImage imageNamed:@"droite.png"];
         [_buttonD setImage:img forState:UIControlStateNormal];
@@ -71,11 +89,14 @@ NSTimer *myTimer;
         myTimer = [[NSTimer alloc] init];
         [myTimer invalidate];
         myTimer=nil;
-        myTimer = [NSTimer scheduledTimerWithTimeInterval:2
+        myTimer = [NSTimer scheduledTimerWithTimeInterval:20
                                     target:self
                                   selector:@selector(blesser:)
                                                  userInfo:@{@"p1":@1}
                                    repeats:true];
+        
+        classImg = [[UIImageView alloc]init];
+       
         
         [self addSubview:_myLabel];
         [self addSubview:myEffect];
@@ -84,24 +105,48 @@ NSTimer *myTimer;
         [self addSubview:_myTextField];
         [self addSubview:_myName];
         [self addSubview:_myPicker];
+        [self addSubview:_buttonLVL];
+        [self addSubview:classImg];
         
+        [_myLabel release];
+        [myEffect release];
+        [ _buttonD release];
+        [ _buttonG release];
+        [ _myTextField release];
+        [ _myName release];
+        [ _myPicker release];
+        [ _buttonLVL release];
+        [ classImg release];
         
         
         [self setPosition:frame.size];
     }
     return self;
 }
+
+-(void) bLvlUp:(UIButton*)sender{
+    myEffect.hidden = false;
+    [m levelUP];
+}
                     
 -(void) blesser:(NSTimer *)timer{
-    int n = [[[timer userInfo] objectForKey:@"p1"]intValue];
-    m.hearthP = m.hearthP - n;
-    NSLog(@"hit : %d", m.hearthP);
+    //int n = [[[timer userInfo] objectForKey:@"p1"]intValue];
+    //m.hearthP = m.hearthP - n;
+    //NSLog(@"hit : %d", m.hearthP);
+    NSLog(@"%@", [m toString]);
                         
 }
 
 -(void) buttonGAction:(UIButton*)sender{
-    myEffect.hidden = false;
-    [m levelUP];
+    
+    [[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeLeft];
+    
+    CombatView *Cv = [[CombatView alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    Cv.myController = _myController;
+    Cv.modele = m;
+    [Cv setBattle];
+    _myController.view = Cv;
+    
 }
 
 -(void) buttonDAction:(UIButton*)sender{
@@ -110,33 +155,34 @@ NSTimer *myTimer;
 }
 
 -(void) setPosition:(CGSize)format{
-    if([[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeLeft ||
-       [[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeRight) {
+    //if([[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeLeft ||
+      // [[UIDevice currentDevice] orientation] == UIDeviceOrientationLandscapeRight) {
         
-    }else{
+    
         _buttonD.frame = CGRectMake(format.width-format.width/8, format.height/16, format.width/8,  format.height/8);
         _buttonG.frame = CGRectMake(0, format.height/16, format.width/8,  format.height/8);
         _myLabel.frame = CGRectMake(0, format.height/16, format.width,  format.height/16);
         _myTextField.frame = CGRectMake(format.width/3, format.height/8, format.width/3,  format.height/16);
         _myName.frame = CGRectMake(0, 3*format.height/16, format.width,  format.height/16);
         myEffect.frame= CGRectMake(0, 0, format.width,  format.height);
-        
         _myPicker.frame = CGRectMake(0, format.height/4, format.width,  2*format.height/16);
-    }
+        _buttonLVL.frame = CGRectMake(0, format.height/4+format.height/8, format.width,  2*format.height/16);
+        classImg.frame = CGRectMake(0, format.height/2, format.width,  format.height/2);
 }
 
 //UIPickerViewDelegate
 
 //contenu composant picker
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    
     return data[row];
 }
 
 //appel lorsque élément picker selectionné
 -(void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     m.myClass = [data objectAtIndex:row];
-    NSLog(@"choix : %@",[data objectAtIndex:row] );
+    NSLog(@"choix : %@",[data objectAtIndex:row]);
+    [m setImg:[data objectAtIndex:row]];
+    classImg.image =  m.myImgView.image;
 }
 
 //UIPickerViewDataSource
@@ -186,6 +232,9 @@ NSTimer *myTimer;
     _myTextField.text =@"Pseudo ?";
     m.myName = _myName.text;
 }
+
+
+
 
 
 

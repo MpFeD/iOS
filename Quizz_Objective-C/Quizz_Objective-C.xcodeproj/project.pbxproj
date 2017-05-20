@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6AE14F41E40EDED0021A8E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE14F31E40EDED0021A8E9 /* main.m */; };
 		D6AE14F71E40EDED0021A8E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE14F61E40EDED0021A8E9 /* AppDelegate.m */; };
 		D6AE14FA1E40EDED0021A8E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE14F91E40EDED0021A8E9 /* ViewController.m */; };
 		D6AE14FD1E40EDED0021A8E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AE14FB1E40EDED0021A8E9 /* Main.storyboard */; };
@@ -15,11 +14,12 @@
 		D6AE15021E40EDED0021A8E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AE15001E40EDED0021A8E9 /* LaunchScreen.storyboard */; };
 		D6AE150A1E40EEA10021A8E9 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE15091E40EEA10021A8E9 /* MainView.m */; };
 		D6AE150D1E41123B0021A8E9 /* Modele.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE150C1E41123B0021A8E9 /* Modele.m */; };
+		FB7255A91EC0DB9B008B5F4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7255A81EC0DB9B008B5F4C /* main.m */; };
+		FBCCECEA1E79BA120052BF2A /* CombatView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCCECE91E79BA120052BF2A /* CombatView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6AE14EF1E40EDED0021A8E9 /* Quizz_Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quizz_Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6AE14F31E40EDED0021A8E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6AE14F51E40EDED0021A8E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D6AE14F61E40EDED0021A8E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D6AE14F81E40EDED0021A8E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -32,6 +32,9 @@
 		D6AE150B1E40EEB40021A8E9 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		D6AE150C1E41123B0021A8E9 /* Modele.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Modele.m; sourceTree = "<group>"; };
 		D6AE150F1E4112980021A8E9 /* Modele.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modele.h; sourceTree = "<group>"; };
+		FB7255A81EC0DB9B008B5F4C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBCCECE81E79B9FB0052BF2A /* CombatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombatView.h; sourceTree = "<group>"; };
+		FBCCECE91E79BA120052BF2A /* CombatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombatView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 		D6AE14E61E40EDED0021A8E9 = {
 			isa = PBXGroup;
 			children = (
+				FB7255A81EC0DB9B008B5F4C /* main.m */,
 				D6AE14F11E40EDED0021A8E9 /* Quizz_Objective-C */,
 				D6AE14F01E40EDED0021A8E9 /* Products */,
 			);
@@ -66,8 +70,6 @@
 			children = (
 				D6AE14F51E40EDED0021A8E9 /* AppDelegate.h */,
 				D6AE14F61E40EDED0021A8E9 /* AppDelegate.m */,
-				D6AE14F81E40EDED0021A8E9 /* ViewController.h */,
-				D6AE14F91E40EDED0021A8E9 /* ViewController.m */,
 				D6AE14FB1E40EDED0021A8E9 /* Main.storyboard */,
 				D6AE14FE1E40EDED0021A8E9 /* Assets.xcassets */,
 				D6AE15001E40EDED0021A8E9 /* LaunchScreen.storyboard */,
@@ -75,8 +77,12 @@
 				D6AE14F21E40EDED0021A8E9 /* Supporting Files */,
 				D6AE15091E40EEA10021A8E9 /* MainView.m */,
 				D6AE150B1E40EEB40021A8E9 /* MainView.h */,
+				FBCCECE91E79BA120052BF2A /* CombatView.m */,
+				FBCCECE81E79B9FB0052BF2A /* CombatView.h */,
 				D6AE150C1E41123B0021A8E9 /* Modele.m */,
 				D6AE150F1E4112980021A8E9 /* Modele.h */,
+				D6AE14F91E40EDED0021A8E9 /* ViewController.m */,
+				D6AE14F81E40EDED0021A8E9 /* ViewController.h */,
 			);
 			path = "Quizz_Objective-C";
 			sourceTree = "<group>";
@@ -84,7 +90,6 @@
 		D6AE14F21E40EDED0021A8E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6AE14F31E40EDED0021A8E9 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,7 +170,8 @@
 				D6AE150A1E40EEA10021A8E9 /* MainView.m in Sources */,
 				D6AE150D1E41123B0021A8E9 /* Modele.m in Sources */,
 				D6AE14F71E40EDED0021A8E9 /* AppDelegate.m in Sources */,
-				D6AE14F41E40EDED0021A8E9 /* main.m in Sources */,
+				FB7255A91EC0DB9B008B5F4C /* main.m in Sources */,
+				FBCCECEA1E79BA120052BF2A /* CombatView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +290,11 @@
 		D6AE15071E40EDED0021A8E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVES = NO;
 				DEVELOPMENT_TEAM = L99GSY552M;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Quizz_Objective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.upmc.sar.Quizz-Objective-C";
@@ -296,8 +305,11 @@
 		D6AE15081E40EDED0021A8E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVES = NO;
 				DEVELOPMENT_TEAM = L99GSY552M;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Quizz_Objective-C/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.upmc.sar.Quizz-Objective-C";
@@ -324,6 +336,7 @@
 				D6AE15081E40EDED0021A8E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
